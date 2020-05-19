@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 (summaryData, rawData) = load_actiwatch_data(path)
@@ -10,6 +10,9 @@ Finds all .csv files in the directory given by the argument path.  Assumes
 each file represents a unique individual, and parses the filename to create a 
 unique identifier for that individual. Loads the raw data into one panda
 DataFrame, and the summary statistics into another. 
+
+NOTE the summary statistics seems to be broken currently (in 2019). I believe that
+updates to Philips Actiware changed the output format
 
 Created on Tue May  2 09:17:37 2017
 
